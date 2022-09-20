@@ -1,5 +1,6 @@
 package com.offer;
 
+// 整数
 public class Path1_1 extends APathBase {
     @Override
     public void Start() {
