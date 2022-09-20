@@ -8,6 +8,6 @@ public class Path1_2 extends APathBase {
     }
 
     private int divide(int arg1, int arg2) {
-        return arg1;
+        return arg1 + arg2;
     }
 }
