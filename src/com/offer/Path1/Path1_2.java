@@ -1,4 +1,6 @@
-package com.offer;
+package com.offer.Path1;
+
+import com.offer.APathBase;
 
 /* 二进制加法
 * 题目：输入两个表示二进制的字符串，请计算它们的和，并以二进制字符串的形式输出。

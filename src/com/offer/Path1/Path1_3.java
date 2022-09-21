@@ -1,4 +1,6 @@
-package com.offer;
+package com.offer.Path1;
+
+import com.offer.APathBase;
 
 /* 前n个数字二进制形式中1的个数
 题目：输入一个非负数n，请计算0到n之间每个数字的二进制形式中1的个数，

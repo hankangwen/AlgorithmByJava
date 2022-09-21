@@ -1,4 +1,6 @@
-package com.offer;
+package com.offer.Path1;
+
+import com.offer.APathBase;
 
 // 整数
 // Java种的整数类型都是有符号的整数类型. Java中的4种不同整数类型，

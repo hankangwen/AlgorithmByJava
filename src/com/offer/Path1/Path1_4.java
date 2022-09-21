@@ -1,4 +1,6 @@
-package com.offer;
+package com.offer.Path1;
+
+import com.offer.APathBase;
 
 /* 只出现一次的数字
 题目：输入一个整数数组，数组中只有一个数字出现了一次，而其他数字都出现了3次。
