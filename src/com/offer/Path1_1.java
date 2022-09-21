@@ -15,7 +15,7 @@ public class Path1_1 extends APathBase {
         int dividend = 15;
         int divisor = 2;
         int result = divide(15, 2);
-        System.out.println(result);
+        print(result);
     }
 
     private int divide(int dividend, int divisor){

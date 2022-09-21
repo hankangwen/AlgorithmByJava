@@ -10,7 +10,7 @@ public class Path1_2 extends APathBase {
         String a = "11";
         String b = "10";
         String result = addBinary(a, b);
-        System.out.println(result);
+        print(result);
     }
 
     private String addBinary(String a, String b){
