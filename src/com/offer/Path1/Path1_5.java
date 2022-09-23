@@ -15,6 +15,33 @@ public class Path1_5 extends APathBase {
         String[] words = { "abcw", "foo", "bar", "fxyz", "abcdef" };
         int result = maxProduct(words);
         print(result);
+        result = maxProduct2(words);
+        print(result);
+    }
+
+    /*Java中int型整数的二进制形式有32位，但只需要26位就能表示一个字符串中出现的字符，
+    因此可以用一个int型整数记录某个字符串中出现的字符。如果字符串中包含'a'，那么整数最右边的数位为1；
+    如果字符串中包含'b'，那么整数的倒数第2位为1，其余以此类推。这样做的好处是能更快地判断两个字符串
+    是否包含相同的字符。如果两个字符串中包含相同的字符，那么它们对应的整数相同的某个数位都为1，
+    两个整数的与运算将不会等于0。如果两个字符串没有相同的字符，那么它们对应的整数的与运算的结果等于0。*/
+    private int maxProduct2(String[] words){
+        int[] flags = new int[words.length];
+        for (int i = 0; i < words.length; i++) {
+            for (char ch : words[i].toCharArray()){
+                flags[i] |= 1 << (ch - 'a');
+            }
+        }
+
+        int result = 0;
+        for (int i = 0; i < words.length; i++) {
+            for (int j = i + 1; j < words.length; j++) {
+                if((flags[i] & flags[j]) == 0){
+                    int prod = words[i].length() * words[j].length();
+                    result = Math.max(result, prod);
+                }
+            }
+        }
+        return result;
     }
 
     private int maxProduct(String[] words){
