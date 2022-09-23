@@ -4,13 +4,15 @@ package com.offer;
 // 二分查找、排序、回溯法、动态规划和图搜索
 
 import com.offer.Path1.Path1_4;
+import com.offer.Path1.Path1_4_1;
 
 public class AMainEntry {
     public static void main(String[] args){
 //        new Path1_1();
 //        new Path1_2();
 //        new Path1_3();
-        new Path1_4();
+        new Path1_4_1();
+//        new Path1_4();
 //        new Path1_5();
 //        new Path2_6();
 //        new Path2_7();
