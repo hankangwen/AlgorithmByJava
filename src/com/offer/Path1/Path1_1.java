@@ -10,19 +10,19 @@ import com.offer.APathBase;
 要求不得使用乘号'*'、除号'/'及求余符号'%'。
 当发生溢出时，返回最大的整数值。假设除数不为0。
 例如，输入15和2，输出15/2的结果，即7。
- */
+ Tips:转为负数计算不会溢出*/
 public class Path1_1 extends APathBase {
     @Override
     public void Start() {
         int dividend = 15;
         int divisor = 2;
-        int result = divide(15, 2);
+        int result = divide(dividend, divisor);
         print(result);
     }
 
     private int divide(int dividend, int divisor){
         // (-2^31) / (-1)会导致溢出，所以这里特殊计算
-        if(dividend == 0x80000000 && divisor == -1){
+        if(dividend == -Math.pow(2,31) && divisor == -1){
             return Integer.MAX_VALUE;
         }
 
@@ -47,8 +47,7 @@ public class Path1_1 extends APathBase {
         while (dividend <= divisor){
             int value = divisor;
             int quotient = 1;
-            // 0xc0000000 = -2^30
-            while (value >= 0xc0000000 && dividend <= value + value){
+            while (value >= -Math.pow(2,30) && dividend <= value + value){
                 quotient += quotient;
                 value += value;
             }
