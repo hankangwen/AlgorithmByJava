@@ -28,9 +28,8 @@ public abstract class APathBase {
     }
 
     protected void print(List<List<Integer>> result){
-        for (int i = 0; i < result.size(); i++) {
+        for (List<Integer> list : result) {
             System.out.print("[ ");
-            List<Integer> list = result.get(i);
             for (int j = 0; j < list.size() - 1; j++) {
                 System.out.print(list.get(j) + ", ");
             }

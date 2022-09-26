@@ -19,7 +19,7 @@ public class Path2_7 extends APathBase {
     }
 
     private List<List<Integer>> threeSum(int[] nums){
-        List<List<Integer>> result = new LinkedList<List<Integer>>();
+        List<List<Integer>> result = new LinkedList<>();
         if(nums.length >= 3){
             Arrays.sort(nums);
 
