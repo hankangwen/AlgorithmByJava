@@ -9,6 +9,22 @@ import com.offer.APathBase;
 public class Path2_6 extends APathBase {
     @Override
     public void Start() {
+        int[] array = {1, 2, 4, 6, 10};
+        int target = 8;
+        int[] result = twoSum(array, target);
+        print(result);
+    }
 
+    private int[] twoSum(int[] numbers, int target){
+        int i = 0;
+        int j = numbers.length - 1;
+        while (i < j && numbers[i] + numbers[j] != target){
+            if(numbers[i] + numbers[j] < target){
+                i++;
+            }else{
+                j--;
+            }
+        }
+        return new int[] {i, j};
     }
 }
