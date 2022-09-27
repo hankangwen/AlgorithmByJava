@@ -8,4 +8,5 @@
      <tree path="/src/com/offer/Path1/Path1_5.java" title="单词长度的最大乘积" extension="java"/>
      <tree path="/src/com/offer/Path2/Path2_6.java" title="排序数组中的两个数字之和" extension="java"/>
      <tree path="/src/com/offer/Path2/Path2_7.java" title="数组中和为0的3个数字" extension="java"/>
+     <tree path="/src/com/offer/Path2/Path2_8.java" title="和大于或等于k的最短子数组" extension="java"/>
  </trees>
