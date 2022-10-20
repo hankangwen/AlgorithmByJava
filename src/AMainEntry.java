@@ -1,5 +1,4 @@
-package com.offer;
-
+import com.codeInterview.Path1.*;
 import com.offer.Path1.*;
 import com.offer.Path2.*;
 import com.offer.Path3.*;
@@ -9,6 +8,11 @@ import com.offer.Path3.*;
 
 public class AMainEntry {
     public static void main(String[] args){
+        System.out.println("Hello");
+        /*《程序员代码面试指南by左程云》*/
+        new Chapter1_1();
+
+        /*《剑指offer》*/
 //        new Path1_1();
 //        new Path1_2();
 //        new Path1_3();
@@ -17,8 +21,8 @@ public class AMainEntry {
 //        new Path1_5();
 //        new Path2_6();
 //        new Path2_7();
-        new Path2_8();
-        new Path2_9();
+//        new Path2_8();
+//        new Path2_9();
 //        new Path2_10();
 //        new Path2_11();
 //        new Path2_12();
