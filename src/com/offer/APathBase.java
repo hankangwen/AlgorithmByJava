@@ -1,6 +1,7 @@
 package com.offer;
 
 import java.util.List;
+import java.util.Stack;
 
 public abstract class APathBase {
     public APathBase(){
@@ -36,5 +37,14 @@ public abstract class APathBase {
             System.out.print(list.get(list.size() - 1));
             System.out.println(" ]");
         }
+    }
+
+    protected void print(Stack<Integer> stack){
+        System.out.print("[ ");
+        for (int i = stack.size()-1; i >= 0; i--) {
+            int value = stack.get(i);
+            System.out.print(value + ", ");
+        }
+        System.out.println(" ]");
     }
 }

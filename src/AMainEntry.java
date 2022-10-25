@@ -10,7 +10,9 @@ public class AMainEntry {
     public static void main(String[] args){
         System.out.println("Hello");
         /*《程序员代码面试指南by左程云》*/
-        new Chapter1_1();
+//        new Chapter1_1();
+//        new Chapter1_2();
+        new Chapter1_3();
 
         /*《剑指offer》*/
 //        new Path1_1();

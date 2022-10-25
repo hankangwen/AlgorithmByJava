@@ -12,7 +12,21 @@ public class Chapter1_2 extends APathBase {
 
     @Override
     public void Start() {
-
+        TwoStackQueue queue = new TwoStackQueue();
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+        queue.add(4);
+        print(queue.poll());
+        print(queue.poll());
+        queue.add(5);
+        queue.add(6);
+        queue.add(7);
+        print(queue.poll());
+        print(queue.poll());
+        print(queue.poll());
+        print(queue.poll());
+        print(queue.poll());
     }
 }
 
