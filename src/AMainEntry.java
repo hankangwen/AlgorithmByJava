@@ -12,7 +12,9 @@ public class AMainEntry {
         /*《程序员代码面试指南by左程云》*/
 //        new Chapter1_1();
 //        new Chapter1_2();
-        new Chapter1_3();
+//        new Chapter1_3();
+//        new Chapter1_4();
+        new Chapter1_5();
 
         /*《剑指offer》*/
 //        new Path1_1();
